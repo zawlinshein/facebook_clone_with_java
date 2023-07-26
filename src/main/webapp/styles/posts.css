@@ -1,0 +1,164 @@
+.post {
+  box-shadow: 0 1px 5px var(--icon-background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: 40px 1fr 100px;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.user-info img,
+.update-delete>a {
+  border-radius: 50%;
+}
+
+.username-time {
+  font-size: 14px;
+  word-spacing: -4px;
+}
+
+.username-time a:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+.username-time p:last-child {
+  font-size: 12px;
+  color: var(--icon-color);
+  cursor: pointer;
+}
+
+.update-delete > a:hover,
+.feedback-button > div:hover,
+.likeUnlikeBtn:hover ,
+.feedback-button > a:hover,
+.update-delete > button:hover {
+  background-color: var(--icon-background-color);
+}
+
+.update-delete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.update-delete a {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.update-delete>a:active {
+  background-color: var(--icon-active-color);
+}
+
+.update-delete > button {
+	color: red;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: white;
+	width: 36px;
+	height: 36px;
+}
+
+.about-post {
+  max-height: 107px;
+  padding: 0 20px 10px 20px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.about-post p:first-child {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  letter-spacing: 0px;
+}
+
+.about-post a {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--icon-color);
+  cursor: pointer;
+}
+
+.like-comment-count {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+}
+
+.likeUnlikeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 10px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0 40px;
+}
+
+.like-comment-count div:first-child {
+  display: flex;
+}
+
+.like-comment-count div:first-child>i {
+  padding-top: 2px;
+  margin-left: -2px;
+  font-size: 16px;
+}
+
+.like-comment-count div:last-child {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+  cursor: pointer;
+}
+
+.feedback-button {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.likeUnlineBtn {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 1.04rem;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.feedback-button>div, .feedback-button > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  width: 100px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.feedback-button > a > div > i {
+  margin-right: 10px;
+  display: inline-block;
+  width: 13px;
+}

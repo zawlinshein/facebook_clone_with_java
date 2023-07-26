@@ -1,0 +1,121 @@
+.online-users:hover,
+.create-group-button:hover,
+.option-button > div:hover {
+  background-color: var(--icon-background-color);
+}
+
+.online-users:active,
+.option-button > div:active,
+.create-group-button:active  {
+  background-color: var(--icon-active-color);
+}
+
+.right-panel {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+}
+
+.right-panel > hr {
+  margin-top: 5px ;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 20px 10px 10px;
+}
+
+.option-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.option-button > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.option-button > div > a > i {
+  font-size: 16px;
+}
+
+.online-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.online-users {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  padding: 7px;
+  box-sizing: border-box;
+  column-gap: 10px;
+}
+
+.online-users > img {
+  width: 36px;
+  border-radius: 50%;
+}
+
+.online-users > p {
+  color: black;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.create-group {
+  padding-top: 10px;
+}
+
+.create-group > p {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--icon-color);
+}
+
+.create-group-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 7px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.create-group-button > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--second-icon-background);
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .right-panel-dummy {
+    display: none;
+  }
+  .right-panel {
+    display: none;
+  }
+}

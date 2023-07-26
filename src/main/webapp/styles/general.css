@@ -1,0 +1,54 @@
+:root {
+  --lightgray: rgb(242, 242, 242);
+  --icon-color: rgb(101, 103, 107);
+  --icon-background-color: rgb(226, 226, 226);
+  --icon-active-color: rgb(220, 220, 220);
+  --white: rgb(255, 255, 255);
+  --second-icon-background: rgb(194, 194, 194);
+  --comment-bg: #DADDE1;
+}
+
+body {
+  font-family: 'Roboto Mono', Arial;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(240, 242, 245);
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--icon-color);
+  display: inline-block;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-hover-affect:hover {
+  text-decoration: underline;
+}
+
+/* body {
+  --s: 100px; \/*control the size\/*
+  --c1: #fde0da;
+  --c2: #bc4a78;
+  
+  --_g: radial-gradient(25% 25% at 25% 25%,var(--c1) 99%,#0000 101%);
+  background:
+   var(--_g) var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
+   var(--_g) 0 0/calc(2*var(--s)) calc(2*var(--s)),
+   radial-gradient(50% 50%,var(--c2) 98%,#0000) 0 0/var(--s) var(--s),
+   repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
+     calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);  
+}
+*/

@@ -1,0 +1,143 @@
+/* left-panel */
+
+.left-panel {
+  width: 300px;
+  padding: 10px 0 10px 10px;
+  font-weight: 600;
+  overflow: auto;
+  scrollbar-color: var(--icon-background-color);
+  position: fixed;
+  left: 0;
+  top: 56px;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+/* upper-panel */
+
+.upper-panel {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.upper-panel a {
+  width: 100%;
+}
+
+.upper-panel-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  color: black;
+  font-size: 13px;
+}
+
+.upper-panel-container img {
+  width: 26px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.friends-icon,
+.save-icon,
+.watch-icon,
+.memories-icon,
+.feed-icon,
+.event-icon,
+.group-icon,
+.ad-icon,
+.crisis-icon,
+.fundraiser-icon {
+  width: 40px;
+  height: 36px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  background-size: 75%;
+}
+
+.friends-icon {
+  background-image: url(../icons/facebooksprite.png);
+  background-position: 0px -238px;
+}
+
+.save-icon {
+  background-image: url(../icons/facebooksprite.png);
+  background-position: 0 -149px;
+}
+
+.watch-icon {
+  background-image: url(../icons/facebooksprite.png);
+  background-position: 0 -418px;
+}
+
+.memories-icon {
+  background-image: url(../icons/facebooksprite.png);
+  background-position: 0 -358px;
+}
+
+.feed-icon {
+  background-image: url(../icons/feed.png);
+}
+
+.event-icon {
+  background-image: url(../icons/event.png);
+}
+
+.group-icon {
+background-image: url(../icons/facebooksprite.png);
+  background-position: 0 -28px;
+}
+
+.ad-icon {
+background-image: url(../icons/admanager.png);
+}
+
+.crisis-icon {
+background-image: url(../icons/crisis.png);
+}
+
+.fundraiser-icon {
+background-image: url(../icons/facebooksprite.png);
+  background-position: 0 -269px;
+}
+
+.seemore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  margin: 0 7px;
+  background-color: var(--second-icon-background);
+  border-radius: 50%;
+}
+
+.upper-panel-container:hover {
+  background-color: var(--icon-background-color);
+}
+
+.upper-panel-container:active {
+  background-color: var(--icon-active-color);
+}
+
+/* copyright */
+
+.copyright {
+  font-size: 0.8rem;
+  font-weight: 100;
+  word-spacing: -8px;
+}
+
+.left-dummy {
+  width: 300px;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1100px){
+  .left-panel, .left-dummy {
+    display: none;
+  }
+}
